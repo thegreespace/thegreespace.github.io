@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compactible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Greespace</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/96b6c660ac.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/GREESPACE-1.png" class="logo">
+
+                    
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    
+                    <h1>Hi, I'm <span>Mr.Green</span><br></h1>
+                </div>
+
+            </div>
+
+        </div>
+        <!-----------about-------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/16099633.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm <span>Mr.Green</span> from unknown. I love Space. Photographing sky is mine hobby. How beautiful is the sky ...isn't she<span>?</span>I also code on computer little bit. I love my nature. Let's go and save the mother earth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------services-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-sun"></i>
+                    <h2>Sky photographs</h2>
+                    <p>Marvelous pictures of the sky you may never seen yet! The beauty of the pictures will  brighten your day!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web designed and selling to the needed </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------portfolio-------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/IMG_20221013_061402_057.jpg">
+                    <div class="layer">
+                        <h3>Moon</h3>
+                        <p>This wonderful picture was taken in the morning sky.</p>
+                        <a href="https://www.instagram.com/p/CjolyRHhJ7H/?utm_source=ig_web_copy_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/IMG_20221021_175744_843.jpg">
+                    <div class="layer">
+                        <h3>Sunset</h3>
+                        <p>The clouds are painted red by the setting sun.</p>
+                        <a href="https://www.instagram.com/p/Cj-craELkBY/?utm_source=ig_web_copy_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/IMG_20221021_180321_794.jpg">
+                    <div class="layer">
+                        <h3>Sunrise</h3>
+                        <p>The rising almighty sun is decorating the non-clouded sky.</p>
+                        <a href="https://www.instagram.com/p/Cj-dUjFr3BV/?utm_source=ig_web_copy_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+               
+            </div>
+            <a href="https://instagram.com/thegreespace?igshid=Yzg5MTU1MDY=" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------contact-->
+    <div id="contact">
+        <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>greespacegreen@gmail.com</p>
+                <div class="social-icons">
+                    <a href="mailto: greespacegreen@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://instagram.com/thegreespace?igshid=Yzg5MTU1MDY="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/thegreespace"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Greespace.</p>
+        </div>
+    </div>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzTiO0BbS0IiRREhgvFbmV4UcZVaO3JPD9E3w17HQnFGXNDiAunoPEXyoTeclvi5WU/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message sent successfully"
+    setTimeout(function(){msg.innerHTML = ""},5000)
+    form.reset()
+})
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html> 
